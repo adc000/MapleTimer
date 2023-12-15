@@ -76,6 +76,16 @@
 16. 시간이 거의 만료되면 배경이 붉게 변하며, 시간이 모두 종료될 경우 음성으로 알림이 울립니다.
 
 # Release Note
+[v0.10]
+- **이번 업데이트 시 config파일을 삭제후 사용해주세요**
+- preset 변경 시 sound, resolution, offset등 공용으로 적용되어야 한다고 판단되는 부분들을 공용으로 변경 가능하도록 추가했습니다.
+- 회수 타이머를 추가했습니다. 켜지자마자 timer는 동작하고, check여부에 따라 알림을 울리지 판단하게 되므로, 첫 알림의 duration은 보장하지 않습니다. 다른 기능들과 마찬가지로 custom voice 기능이 있습니다.(test는 해보지 않음)
+
+![Alt text](img/image-13.png)
+![Alt text](img/image-14.png)
+
+- 일부 벞지를 사용할 때 progress bar의 수치에 따라 발생하던 오류를 수정했습니다. ("256"의 값을 'green'에 사용할 수 없습니다 오류)
+
 [v0.9]
 
 - preset 변경 시 일부 race condition으로 인해 중도 저장되며 잘못된 값이 저장되던 문제를 해결했습니다. 이제 원래 의도대로의 preset으로 동작합니다.
